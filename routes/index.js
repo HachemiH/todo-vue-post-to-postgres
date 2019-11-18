@@ -14,5 +14,6 @@ router.get("/api", (req, res) =>
 );
 
 router.post("/api/todos", todosController.create);
+router.get("/api/todos", todosController.list);
 
 module.exports = router;
