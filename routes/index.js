@@ -17,5 +17,6 @@ router.get("/api", (req, res) =>
 router.post("/api/todos", todosController.create);
 router.get("/api/todos", todosController.list);
 router.post("/api/todos/:todoId/items", todoItemsController.create);
+router.get("/api/todos/:todoId", todosController.retrieve);
 
 module.exports = router;
