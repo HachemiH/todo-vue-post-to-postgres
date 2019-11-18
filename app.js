@@ -1,3 +1,4 @@
+require("dotenv-extended").load();
 import createError from "http-errors";
 import express from "express";
 import path from "path";
