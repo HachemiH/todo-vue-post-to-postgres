@@ -10,7 +10,7 @@ module.exports = {
       .catch(error => res.status(400).send(error));
   },
   update(req, res) {
-    return TodoItem.findAll({
+    return TodoItem.findOne({
       where: {
         id: req.params.todoItemId,
         todoId: req.params.todoId
@@ -35,7 +35,7 @@ module.exports = {
   },
 
   destroy(req, res) {
-    return TodoItem.findAll({
+    return TodoItem.findOne({
       where: {
         id: req.params.todoItemId,
         todoId: req.params.todoId
